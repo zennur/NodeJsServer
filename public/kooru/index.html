@@ -12,13 +12,15 @@
 
 </body>
 <script>
-    var i, len =3;
-    for (i =0; i<len;i++){
+    len =3;
+    for ( var i =0; i<len;i++){
         document.getElementById("div"+i).addEventListener("click",function () {
-            console.log("you click div #" + i);
+            var j = this.id;
+            console.log("you click " + j);
+
         },false);
         console.log(document.getElementById("div"+i));
     }
-    console.log("test22");
+    console.log("test23");
 </script>
 </html>
